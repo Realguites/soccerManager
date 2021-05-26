@@ -31,7 +31,7 @@ routes.get("/campeonatos", campeonatoController.index)
     .post("/campeonatos", campeonatoController.store);
 
 routes.get("/usuarios",login, usuarioController.index)
-    .post("/usuarios",login, usuarioController.store)
+    .post("/usuarios", usuarioController.store)
     .post("/login", loginController.login);
     
 module.exports = routes;
